@@ -1,0 +1,42 @@
+//buatlah sebuah game sederhana, proxytia namannya
+//untuk memulai game tersebut dibutukan 2 variable
+//1 let nama ""
+//2 let peran ""
+//variable nama dan peran harus memiliki isi data
+//if nama kosong, berikan peringanta "nama tidak boleh kosong"
+//if peran kosong, berikan peringatan "untuk memulai silahkan pilih peran"
+//ada 3 peran yang ada yaitu, ksatria, tabib, dan penyihir
+//Tugas anda adalah untuk membuat program yang mengecek isi variable "nama & peran"
+//serta mengeluarkan respon sesuai variable tersebut
+//ada 4 jenis respon yang sesuai dengan 3 peran tersebut yaitu
+//halo ksatria ${nama}, kamu dapat menyerang dengan senjatamu !
+//halo Tabib ${nama}, kamu akan membantu temanmu yang terluka
+//halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu !
+//Halo ${nama}, peran kamu gak ada nih, kamu jadi bot aja yah
+//tips belajar penggunaan '' (backtick)pada javascript
+//agar mudah dalam memasukan variable ke dalan string
+//tapi tanpa backtick juga ga masalah yang penting  output sesuai
+
+//algoritma
+
+let nama = "A";
+let peran = "Tupai";    
+
+
+if (nama.length === 0) {
+    console.log ("Nama Harus Diisi !!");
+} else if (peran.length === 0) {
+    console.log ("Isikan peran untuk mulai bermain !")
+} else if (peran === "Knight") {
+     console.log ("hai", peran, nama, "Kamu dapat Menyerang dengan Senjata")
+ } else if (peran === "Penyihir") {
+     console.log ("hai", peran, nama, "Ciptakan Keajaiban Di Dunia Baru")
+ } else if (peran === "Healer") {
+     console.log ("hai", peran, nama, "Sembuhkan Temanmu dengan Kekuatan Cinta")
+ } else {
+    peran = "" 
+        console.log ("hai", nama, "Peran kamu gak ada, Jadi NPC aja yah")
+ }
+
+ 
+
